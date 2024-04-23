@@ -19,8 +19,8 @@
       "assets/*": ["assets/*"],
       "components/*": ["components/*"],
       "constants/*": ["constants/*"],
+      "data/*": ["data/*"],
       "modules/*": ["modules/*"],
-      "pages/*": ["pages/*"],
       "utils/*": ["utils/*"]
     },
 
