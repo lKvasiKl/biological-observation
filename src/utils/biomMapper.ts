@@ -25,14 +25,14 @@ export const mapBiomToBacteriaRows = (
   return bacteriaTableRowData;
 };
 
-const createBacteriaRow = (row: BiomRow): BacteriaTableRowData => {
+export const createBacteriaRow = (row: BiomRow): BacteriaTableRowData => {
   return {
     name: row.metadata.lineage[LINEAGE_LEVEL].name,
     taxId: row.metadata.lineage[LINEAGE_LEVEL].tax_id,
   };
 };
 
-const mapDataToBacteriaRows = (
+export const mapDataToBacteriaRows = (
   data: BiomRowData,
   bacteriaTableRowData: BacteriaTableRowData[],
 ): BacteriaTableRowData[] => {
