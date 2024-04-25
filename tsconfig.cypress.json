@@ -1,24 +1,22 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    
+      
     /* Types */
-    "types": [
-      "node", 
-      "jest", 
-      "@testing-library/jest-dom",
-    ],
-
+    "types": ["node", "cypress"],
+      
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "allowJs": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "baseUrl": "src",
@@ -29,14 +27,8 @@
       "data/*": ["data/*"],
       "styles/*": ["styles/*"],
       "utils/*": ["utils/*"]
-    },
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    }
   },
-  "include": ["src", "__tests__"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "cypress"]
 }
+  

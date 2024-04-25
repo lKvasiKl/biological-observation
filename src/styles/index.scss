@@ -1,0 +1,62 @@
+@import 'colors.scss';
+@import 'spaces.scss';
+@import 'fonts.scss';
+
+#root {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: $space-0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: $weight-s;
+  font-size: $size-m;
+}
+
+input,
+button {
+  margin: $space-0;
+  font: inherit;
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+th {
+  background-color: $gray;
+}
+
+th,
+td {
+  padding: $space-s;
+  border: 1px solid $black;
+  width: 110px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+thead {
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

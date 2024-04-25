@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Lactobacillus kitasatonis DSM 16761 = JCM 1039",
+    "taxId": 1423767,
+    "relativeAbundance": "0.07%",
+    "abundanceScore": 99.77,
+    "uniqueMatchesFrequency": 1625
+  },
+  {
+    "name": "Kingella oralis ATCC 51147",
+    "taxId": 629741,
+    "relativeAbundance": "< 0.01%",
+    "abundanceScore": 7.62,
+    "uniqueMatchesFrequency": 113
+  }
+]
