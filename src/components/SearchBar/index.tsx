@@ -13,6 +13,7 @@ export const SearchBar = React.memo(
           placeholder={placeholder}
           className={styles.searchBarContainer_input}
           onChange={onInputChange}
+          data-cy="search-bar-input"
         />
         <img {...IMAGE_CONFIG} className={styles.searchBarContainer_image} />
       </div>
