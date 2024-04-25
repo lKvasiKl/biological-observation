@@ -6,6 +6,7 @@ export default {
   },
   moduleNameMapper: {
     '\\.(css|less|scss|sss|styl)$': '<rootDir>/node_modules/identity-obj-proxy',
+    '^.+\\.(svg)$': '<rootDir>/__mocks__/svg.tsx',
     '^src/(.*)$': '<rootDir>/src/$1',
     '^utils/(.*)$': '<rootDir>/src/utils/$1',
     '^components/(.*)$': '<rootDir>/src/components/$1',

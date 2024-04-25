@@ -8,7 +8,7 @@ import styles from './style.module.scss';
 export const SearchBar = React.memo(
   ({ placeholder, onInputChange }: SearchBarProps) => {
     return (
-      <div className={styles.searchBarContainer}>
+      <div className={styles.searchBarContainer} data-cy="search-bar">
         <input
           placeholder={placeholder}
           className={styles.searchBarContainer_input}

@@ -48,10 +48,12 @@ const COLUMN_HEADER_CONFIG = [
   },
 ];
 
-test('Table renders correct with header and body data', () => {
-  render(<Table dataSource={TEST_DATA} columns={COLUMN_HEADER_CONFIG} />);
+describe('Table component', () => {
+  test('Table renders correct with header and body data', () => {
+    render(<Table dataSource={TEST_DATA} columns={COLUMN_HEADER_CONFIG} />);
 
-  expect(screen.getByTestId('table')).toBeInTheDocument();
-  expect(screen.getByTestId('table-header')).toBeInTheDocument();
-  expect(screen.getByTestId('table-body')).toBeInTheDocument();
+    expect(screen.getByTestId('table')).toBeInTheDocument();
+    expect(screen.getByTestId('table-header')).toBeInTheDocument();
+    expect(screen.getByTestId('table-body')).toBeInTheDocument();
+  });
 });
