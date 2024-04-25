@@ -5,6 +5,13 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    
+    /* Types */
+    "types": [
+      "node", 
+      "jest", 
+      "@testing-library/jest-dom"
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -17,11 +24,9 @@
     "baseUrl": "src",
     "paths": {
       "app/*": ["app/*"],
-      "assets/*": ["assets/*"],
       "components/*": ["components/*"],
-      "constants/*": ["constants/*"],
       "data/*": ["data/*"],
-      "modules/*": ["modules/*"],
+      "styles/*": ["styles/*"],
       "utils/*": ["utils/*"]
     },
 
@@ -31,10 +36,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "types": [
-    "jest",
-    "@testing-library/jest-dom"
-  ],
   "include": ["src", "__tests__"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

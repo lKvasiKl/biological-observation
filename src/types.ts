@@ -7,7 +7,10 @@ export type BiomRowData = BiomData['data'];
 export interface BacteriaTableRowData {
   name?: string;
   taxId?: number;
-  abundanceScore?: number;
-  relativeAbundance?: number;
+  abundanceScore?: string | number;
+  relativeAbundance?: string | number;
   uniqueMatchesFrequency?: number;
 }
+
+export type AbundanceScoreData = BacteriaTableRowData['abundanceScore'];
+export type RelativeAbundanceData = BacteriaTableRowData['relativeAbundance'];

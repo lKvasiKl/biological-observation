@@ -7,11 +7,9 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: {
-      assets: '/src/assets',
       components: '/src/components',
-      constants: '/src/constants',
       data: '/src/data',
-      modules: '/src/modules',
+      styles: '/src/styles',
       utils: '/src/utils',
     },
   },
