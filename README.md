@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Task: Parse biom.json and Build a Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
 
-Currently, two official plugins are available:
+This task involves parsing data stored in **`biom.json`** and building a table according to the specifications provided. The data is stored in **Biological Observation Matrix 1.0.0 format**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements:
 
-## Expanding the ESLint configuration
+- Parse the “rows” field of the `biom.json`, which contains an array of table rows;
+- Display columns for Name, Tax ID, Abundance score, Relative abundance, and Unique matches frequency;
+- Use React.js, JS, HTML, CSS (SASS), TypeScript;
+- Layout is required in "Responsive design". Max. resolution 1920x1080px, minimum resolution 320x480px;
+- Search the table data (by name);
+- Test coverage of the entire application (cypress, joke).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Example Output:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+| Name                             | Tax ID | Abundance Score | Relative Abundance | Unique Matches Frequency |
+| :------------------------------- | :----- | :-------------- | :----------------- | :----------------------- |
+| Lactobacillus crispatus SJ-3C-US | 575598 | 139028.29       | 94.43%             | 1362                     |
