@@ -7,7 +7,7 @@ import styles from './style.module.scss';
 
 export const Table = ({ dataSource, columns }: TableProps) => {
   return (
-    <table className={styles.table}>
+    <table className={styles.table} data-cy="table">
       <TableHeader columns={columns} />
       <Body dataSource={dataSource} columns={columns} />
     </table>

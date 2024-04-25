@@ -18,6 +18,7 @@ export const App = () => {
 
   useEffect(() => {
     const data = mapBiomToBacteriaRows(biomObject);
+
     const formatted = data.map((item) => ({
       ...item,
       relativeAbundance: formatRelativeAbundanceCell(item.relativeAbundance),
