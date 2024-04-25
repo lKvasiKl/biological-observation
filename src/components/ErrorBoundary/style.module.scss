@@ -1,0 +1,33 @@
+@import 'styles/fonts.scss';
+@import 'styles/colors.scss';
+
+.errorBoundaryContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+
+  &_title,
+  &_error,
+  &_text {
+    font-size: $size-m;
+    font-weight: $weight-m;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &_title {
+    font-size: $size-l;
+    font-weight: $weight-l;
+  }
+
+  &_error {
+    color: $red;
+  }
+
+  &_text {
+    text-align: center;
+  }
+}
