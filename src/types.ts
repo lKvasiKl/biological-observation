@@ -1,3 +1,5 @@
+import { ChangeEvent, ChangeEventHandler } from 'react';
+
 import biomObject from 'data/biom.json';
 
 export type BiomData = typeof biomObject;
@@ -14,3 +16,6 @@ export interface BacteriaTableRowData {
 
 export type AbundanceScoreData = BacteriaTableRowData['abundanceScore'];
 export type RelativeAbundanceData = BacteriaTableRowData['relativeAbundance'];
+
+export type InputChangeEvent = ChangeEvent<HTMLInputElement>;
+export type OnChangeEvent = ChangeEventHandler<HTMLInputElement>;
