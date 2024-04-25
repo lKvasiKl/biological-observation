@@ -1,25 +1,34 @@
 @import 'styles/colors.scss';
 @import 'styles/media.scss';
+@import 'styles/spaces.scss';
+
+.container {
+  margin: 0 $space-s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .tableContainer {
   width: 100%;
-  max-width: 1140px;
   height: 550px;
   overflow-x: auto;
   overflow-y: auto;
 
+  @media (min-width: $media-breakpoints-xxl) {
+    width: 80%;
+    height: 70%;
+  }
+
   &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: $space-xs;
+    height: $space-xs;
     background-color: $scrollbar-background;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: $scrollbar-thumb-background;
-  }
-
-  @media (min-width: $media-breakpoints-xxl) {
-    max-width: 80%;
-    height: 70%;
   }
 }

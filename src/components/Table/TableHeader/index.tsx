@@ -1,6 +1,8 @@
+import React from 'react';
+
 import { TableHeaderProps } from '../types';
 
-export const TableHeader = ({ columns }: TableHeaderProps) => {
+export const TableHeader = React.memo(({ columns }: TableHeaderProps) => {
   return (
     <thead data-cy="table-header">
       <tr>
@@ -10,4 +12,4 @@ export const TableHeader = ({ columns }: TableHeaderProps) => {
       </tr>
     </thead>
   );
-};
+});

@@ -1,0 +1,35 @@
+@import 'styles/colors.scss';
+@import 'styles/media.scss';
+@import 'styles/spaces.scss';
+
+.searchBarContainer {
+  height: $space-xxl;
+  gap: $space-s;
+  margin: $space-s 0;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $black;
+  align-self: flex-start;
+  margin-left: 10%;
+  border-radius: 5px;
+  max-width: 450px;
+  width: 100%;
+
+  @media (max-width: $media-breakpoints-xxl) {
+    margin-left: 0;
+  }
+
+  &_input {
+    padding-left: $space-s;
+    background-color: transparent;
+    font-style: normal;
+    height: inherit;
+    width: 100%;
+  }
+
+  &_image {
+    margin-right: $space-s;
+    align-self: center;
+    user-select: none;
+  }
+}
