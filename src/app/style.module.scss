@@ -1,0 +1,25 @@
+@import 'styles/colors.scss';
+@import 'styles/media.scss';
+
+.tableContainer {
+  width: 100%;
+  max-width: 1140px;
+  height: 550px;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: $scrollbar-background;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-background;
+  }
+
+  @media (min-width: $media-breakpoints-xxl) {
+    max-width: 80%;
+    height: 70%;
+  }
+}
