@@ -7,7 +7,7 @@ This task involves parsing data stored in **`biom.json`** and building a table a
 ## Requirements:
 
 - Parse the “rows” field of the `biom.json`, which contains an array of table rows;
-- Display columns for Name, Tax ID, Abundance score, Relative abundance, and Unique matches frequency;
+- Display columns for Name, Tax ID, Abundance score, Relative abundance (formatted percentage number, 2 decimals max. Values that are less than 0.01% should be displayed as a string "&lt; 0.01%"), and Unique matches frequency;
 - Use React.js, JS, HTML, CSS (SASS), TypeScript;
 - Layout is required in "Responsive design". Max. resolution 1920x1080px, minimum resolution 320x480px;
 - Search the table data (by name);
